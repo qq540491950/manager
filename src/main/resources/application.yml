@@ -17,11 +17,15 @@ spring:
         max-idle: 8
         min-idle: 0
         max-active: 8
+  security:
+    user:
+      name: user
+      password: 123456
 
 
 mybatis:
   type-aliases-package: com.lirt.manager.entity
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:mapper/*Mapper/*.xml
 
 # 分页插件
 pagehelper:

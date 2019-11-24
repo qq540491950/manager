@@ -9,7 +9,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @MapperScan(value = "com.lirt.manager.mapper")
 @SpringBootApplication
 @EnableSwagger2
-@EnableCaching
+//@EnableCaching
 public class MangerApplication {
 
     public static void main(String[] args) {

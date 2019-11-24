@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    @Cacheable(value = "user")
+//    @Cacheable(value = "user")
     public List<User> findAll(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum, pageSize);
         return userMapper.findAll();
